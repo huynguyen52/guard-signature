@@ -8,7 +8,7 @@ interface BannerProps {
     id: number;
     key: string;
     img: any;
-    title: string;
+    title: any;
     desc: any;
   };
   whiteBackground?: boolean;

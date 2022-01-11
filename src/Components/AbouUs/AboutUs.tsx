@@ -7,7 +7,7 @@ function AboutUs() {
     <section className="about-us section">
       <div className="container">
         <Typography.Title level={4} className="about-us__title">
-          Easy and quick
+          Easy and <br /> quick
         </Typography.Title>
         <div className="about-us__content">
           <Typography.Text className="about-us__desc">

@@ -20,7 +20,11 @@ function Home() {
       id: 1,
       key: 'first',
       img: banner1,
-      title: '한 눈에 확인하는 계약 상태',
+      title: (
+        <Typography.Title className="section__header" level={3}>
+          한 눈에 확인하는 <br /> 계약 상태
+        </Typography.Title>
+      ),
       desc: (
         <Typography.Text className="section__header--desc">
           계약이 진행되는 모든 과정을 실시간으로 추적해보세요. <br /> 진행
@@ -34,7 +38,11 @@ function Home() {
       id: 2,
       key: 'second',
       img: banner2,
-      title: '사용하던 서명 그대로 ',
+      title: (
+        <Typography.Title className="section__header" level={3}>
+          사용하던 서명 <br /> 그대로
+        </Typography.Title>
+      ),
       desc: (
         <Typography.Text className="section__header--desc">
           사용하던 사인과 도장을 PC와 모바일에서도 사용할 수 있습니다. <br />{' '}
@@ -49,7 +57,11 @@ function Home() {
       id: 3,
       key: 'third',
       img: banner3,
-      title: '간편한 본인인증',
+      title: (
+        <Typography.Title className="section__header" level={3}>
+          간편한 <br /> 본인인증
+        </Typography.Title>
+      ),
       desc: (
         <Typography.Text className="section__header--desc">
           공인인증서와 OTP, Active X 등을 요구하지 않습니다. <br /> 간단하고
@@ -63,7 +75,11 @@ function Home() {
       id: 4,
       key: 'fourth',
       img: banner4,
-      title: '텍스트 및 체크박스 입력 ',
+      title: (
+        <Typography.Title className="section__header" level={3}>
+          텍스트 및 <br /> 체크박스 입력
+        </Typography.Title>
+      ),
       desc: (
         <Typography.Text className="section__header--desc">
           문서에 텍스트 박스와 체크박스를 입력해 보세요. <br /> 입력 위치, 크기,

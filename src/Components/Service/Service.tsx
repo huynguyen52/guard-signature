@@ -11,25 +11,54 @@ function Service() {
     {
       key: 0,
       img: service1,
-      desc: '필요한 계약서 파일을 업로드합니다.',
+
+      desc: (
+        <Typography.Text
+          className="service__desc"
+          style={{ textAlign: 'center' }}
+        >
+          필요한 계약서 파일을 <br /> 업로드합니다.
+        </Typography.Text>
+      ),
       title: '업로드하기',
     },
     {
       key: 1,
       img: service2,
-      desc: '업로드한 계약서 파일에 서명 요청을 하세요.',
+      desc: (
+        <Typography.Text
+          className="service__desc"
+          style={{ textAlign: 'center' }}
+        >
+          업로드한 계약서 파일에 <br /> 서명 요청을 하세요.
+        </Typography.Text>
+      ),
       title: '서명 요청하기',
     },
     {
       key: 2,
       img: service3,
-      desc: '상대방이 간단한 절차를 통해 서명할 수 있습니다.',
+      desc: (
+        <Typography.Text
+          className="service__desc"
+          style={{ textAlign: 'center' }}
+        >
+          상대방이 간단한 절차를 통해 <br /> 서명할 수 있습니다.
+        </Typography.Text>
+      ),
       title: '서명 입력하기',
     },
     {
       key: 3,
       img: service4,
-      desc: '언제 어디서든 5분 만에 계약 완료!',
+      desc: (
+        <Typography.Text
+          className="service__desc"
+          style={{ textAlign: 'center' }}
+        >
+          언제 어디서든 <br /> 5분 만에 계약 완료!
+        </Typography.Text>
+      ),
       title: '계약 완료',
     },
   ];
@@ -48,7 +77,7 @@ function Service() {
           {servicesDataList.map((item) => (
             <article key={item.key} className="service__item">
               <div className="service__img">
-                <img src={item.img} alt={item.desc} />
+                <img src={item.img} alt={''} />
               </div>
               <div className="service__content">
                 <Typography.Title
@@ -58,12 +87,7 @@ function Service() {
                 >
                   {item.title}
                 </Typography.Title>
-                <Typography.Text
-                  className="service__desc"
-                  style={{ textAlign: 'center' }}
-                >
-                  {item.desc}
-                </Typography.Text>
+                {item.desc}
               </div>
             </article>
           ))}
