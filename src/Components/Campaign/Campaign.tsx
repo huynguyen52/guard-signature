@@ -47,7 +47,7 @@ function Campaign() {
             </Typography.Text>
           </div>
           <div className="campaign__img">
-            <img src={service2} alt="service 2" />
+            <img src={service1} alt="service 2" />
           </div>
         </article>
         <article className="campaign__item align-right">
@@ -86,7 +86,7 @@ function Campaign() {
             </Typography.Text>
           </div>
           <div className="campaign__img">
-            <img src={service3} alt="service 3" />
+            <img src={service2} alt="service 3" />
           </div>
         </article>
         <article className="campaign__item">
@@ -125,7 +125,7 @@ function Campaign() {
             </Typography.Text>
           </div>
           <div className="campaign__img">
-            <img src={service1} alt="service 1" />
+            <img src={service3} alt="service 1" />
           </div>
         </article>
       </div>
