@@ -1,0 +1,22 @@
+@import '../../Assets/Color/color';
+
+.banner {
+  background-color: $white-color;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+  }
+  &__content {
+    text-align: left;
+  }
+  &.align-right {
+    background-color: transparent;
+    .banner__wrapper {
+      flex-direction: row-reverse;
+    }
+    .banner__content {
+      text-align: right;
+    }
+  }
+}

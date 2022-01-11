@@ -1,0 +1,33 @@
+@import '../../Assets/Color/color';
+
+.campaign {
+  background-color: $white-color;
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &.align-right {
+      flex-direction: row-reverse;
+    }
+  }
+  &__item + &__item {
+    margin-top: 12rem;
+  }
+  &__header.ant-typography {
+    margin-bottom: 7rem;
+    font-size: 4.5rem;
+    font-weight: 400;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: $black-color;
+  }
+  &__title,
+  &__desc {
+    display: block;
+  }
+  &__title + &__desc {
+    margin-top: 2rem;
+  }
+  &__desc + &__title {
+    margin-top: 5rem;
+  }
+}

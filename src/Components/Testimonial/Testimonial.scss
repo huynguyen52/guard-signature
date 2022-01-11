@@ -1,0 +1,22 @@
+.testimonial {
+  text-align: center;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8rem;
+  }
+  &__header,
+  &__sub-header {
+    display: block;
+  }
+  &__img + &__header {
+    margin-top: 2.5rem;
+  }
+
+  &__header + &__sub-header {
+    margin-top: 2.1rem;
+  }
+  &__item + &__item {
+    margin-top: 5.4rem;
+  }
+}

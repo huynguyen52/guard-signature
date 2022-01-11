@@ -1,0 +1,35 @@
+@import '../../Assets/Color/color';
+
+.service {
+  background-color: $white-color;
+  &__list {
+    margin-top: 8.2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    text-align: center;
+    flex: 0 0 25%;
+  }
+  &__img img {
+    width: 9rem;
+    height: 9rem;
+    margin: auto;
+    display: block;
+  }
+  &__title {
+    font-size: 2.4rem;
+    text-align: center;
+    margin-top: 3.5rem;
+    margin-bottom: 0 !important;
+    font-weight: 500 !important;
+  }
+  &__desc {
+    font-size: 1.8rem;
+    text-align: center;
+    display: block;
+  }
+  &__title + &__desc {
+    margin-top: 1.9rem !important;
+  }
+}

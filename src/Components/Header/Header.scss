@@ -1,0 +1,31 @@
+@import '../../Assets/Color/color';
+.ant-layout-header.header {
+  background-color: $white-color;
+  line-height: 100px;
+  height: auto;
+  .logo {
+    font-size: 1.85rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    line-height: normal;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-bar {
+    font-size: 1.6rem;
+    border-bottom: none;
+  }
+  .header__extra {
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2.9rem;
+    a {
+      color: $black-color;
+    }
+  }
+}
