@@ -35,37 +35,39 @@ function Service() {
   ];
   return (
     <section className="service section" style={{ textAlign: 'center' }}>
-      <Typography.Title className="section__header" level={3}>
-        간단하게 끝내는 계약과정
-      </Typography.Title>
-      <Typography.Text className="section__header--desc">
-        계약서 파일을 업로드하여 서명을 요청해 보세요. <br /> 상대방은 회원가입
-        없이 이메일, 카카오톡 링크를 통해 서명할 수 있습니다. <br /> 언제
-        어디서든 5분만에 계약을 체결해 보세요.
-      </Typography.Text>
-      <div className="service__list">
-        {servicesDataList.map((item) => (
-          <article key={item.key} className="service__item">
-            <div className="service__img">
-              <img src={item.img} alt={item.desc} />
-            </div>
-            <div className="service__content">
-              <Typography.Title
-                level={4}
-                className="service__title"
-                style={{ textAlign: 'center' }}
-              >
-                {item.title}
-              </Typography.Title>
-              <Typography.Text
-                className="service__desc"
-                style={{ textAlign: 'center' }}
-              >
-                {item.desc}
-              </Typography.Text>
-            </div>
-          </article>
-        ))}
+      <div className="container">
+        <Typography.Title className="section__header" level={3}>
+          간단하게 끝내는 계약과정
+        </Typography.Title>
+        <Typography.Text className="section__header--desc">
+          계약서 파일을 업로드하여 서명을 요청해 보세요. <br /> 상대방은
+          회원가입 없이 이메일, 카카오톡 링크를 통해 서명할 수 있습니다. <br />{' '}
+          언제 어디서든 5분만에 계약을 체결해 보세요.
+        </Typography.Text>
+        <div className="service__list">
+          {servicesDataList.map((item) => (
+            <article key={item.key} className="service__item">
+              <div className="service__img">
+                <img src={item.img} alt={item.desc} />
+              </div>
+              <div className="service__content">
+                <Typography.Title
+                  level={4}
+                  className="service__title"
+                  style={{ textAlign: 'center' }}
+                >
+                  {item.title}
+                </Typography.Title>
+                <Typography.Text
+                  className="service__desc"
+                  style={{ textAlign: 'center' }}
+                >
+                  {item.desc}
+                </Typography.Text>
+              </div>
+            </article>
+          ))}
+        </div>
       </div>
     </section>
   );

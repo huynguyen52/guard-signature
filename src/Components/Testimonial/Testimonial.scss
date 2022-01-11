@@ -1,3 +1,4 @@
+@import '../../Assets/Color/color';
 .testimonial {
   text-align: center;
   &__content {
@@ -5,9 +6,18 @@
     justify-content: space-between;
     margin-top: 8rem;
   }
-  &__header,
-  &__sub-header {
+  &__item {
+    color: $gray-color;
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover {
+      color: $black-color;
+    }
+  }
+  &__header.ant-typography,
+  &__sub-header.ant-typography {
     display: block;
+    color: inherit;
   }
   &__img + &__header {
     margin-top: 2.5rem;

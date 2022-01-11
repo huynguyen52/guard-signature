@@ -1,7 +1,9 @@
 @import '../../Assets/Color/color';
 .footer {
   padding: 5rem 0px 8rem 0;
-  background-color: $white-color;
+  &.ant-layout-footer {
+    background-color: $white-color;
+  }
   .container {
     display: flex;
     justify-content: space-between;

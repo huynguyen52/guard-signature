@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.scss';
 import { Layout, Menu } from 'antd';
+import logo from '../../Assets/Images/logo-icon-1.png';
 
 function Header() {
   const menuList = [
@@ -16,7 +17,7 @@ function Header() {
     <Layout.Header className="header">
       <div className="container">
         <a href="#" className="logo">
-          Guard <br /> Signature
+          <img src={logo} alt="logo" />
         </a>
         <Menu
           className="nav-bar"
