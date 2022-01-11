@@ -34,7 +34,7 @@ function Service() {
     },
   ];
   return (
-    <section className="service section">
+    <section className="service section" style={{ textAlign: 'center' }}>
       <Typography.Title className="section__header" level={3}>
         간단하게 끝내는 계약과정
       </Typography.Title>
